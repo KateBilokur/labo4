@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    double price, discount;
+    printf("Введіть вартість товару: ");
+    scanf("%lf", &price);
+    printf("Введіть відсоток знижки: ");
+    scanf("%lf", &discount);
+
+    double finalPrice = price - (price * discount / 100);
+    printf("Кінцева вартість: %.2f грн\n", finalPrice);
+    return 0;
+}
