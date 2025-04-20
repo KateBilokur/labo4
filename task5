@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Введіть тризначне число: ");
+    scanf("%d", &num);
+
+    int sum = (num / 100) + (num / 10 % 10) + (num % 10);
+    printf("Сума цифр: %d\n", sum);
+    return 0;
+}
